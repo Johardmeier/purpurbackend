@@ -1,0 +1,83 @@
+// Import Bulma's core
+@import "~bulma/sass/utilities/_all";
+
+// Set your colors
+$primary: #8c67ef;
+$primary-invert: findColorInvert($primary);
+$twitter: #4099FF;
+$twitter-invert: findColorInvert($twitter);
+$success: #c75d16;
+
+$purpur: #6eb2d8;
+$purpur-invert: findColorInvert($purpur);
+//paper
+$paperblue:#95cad9;
+$paperyellow:#d7c071;
+$paperred:#e57b3e;
+$paperblue-invert: findColorInvert($paperblue);
+$paperyellow-invert: findColorInvert($paperyellow);
+$paperred-invert: findColorInvert($paperred);
+
+
+// Setup $colors to use as bulma classes (e.g. 'is-twitter')
+$colors: (
+        "white": ($white, $black),
+        "black": ($black, $white),
+        "light": ($light, $light-invert),
+        "dark": ($dark, $dark-invert),
+        "primary": ($primary, $primary-invert),
+        "info": ($info, $info-invert),
+        "success": ($success, $success-invert),
+        "warning": ($warning, $warning-invert),
+        "danger": ($danger, $danger-invert),
+        "twitter": ($twitter, $twitter-invert),
+        "purpur":($purpur,$purpur-invert),
+        "paperblue":($paperblue,$paperblue-invert),
+        "paperyellow":($paperyellow,$paperyellow-invert),
+        "paperred":($paperred,$paperred-invert),
+);
+
+// Links
+$link: $primary;
+$link-invert: $primary-invert;
+$link-focus-border: $primary;
+
+//App design
+//$appframe-color: #fffef2;
+$appframe-color: #f8f0e5;
+$navbar-background-color : darken($appframe-color,2);
+$navbar-box-shadow-color : lighten($appframe-color,10);
+
+$sidebar-background-color : darken($appframe-color,5);
+$sidebar-box-shadow-color : lighten($appframe-color,10);
+
+$app_background-color : lighten($appframe-color,1);
+
+#app {
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: $app_background-color;
+}
+
+aside {
+  background-color: $sidebar-background-color;
+  border-right-color: $sidebar-box-shadow-color;
+  border-right-style: solid;
+  border-right-width: 2px;
+}
+
+#main-content{
+  margin: 20px;
+  padding:6px;
+  border-radius: 6px;
+  background-color: white;
+}
+
+footer{
+  background-color: $sidebar-background-color;
+}
+
+// Import Bulma and Buefy styles
+@import "~bulma";
+@import "~buefy/src/scss/buefy";

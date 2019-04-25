@@ -1,0 +1,108 @@
+//
+
+html, body, #app {
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width:100%;
+  padding: 0 !important;
+}
+
+main {
+
+
+}
+
+aside {
+  z-index: 10;
+}
+/*
+html, body {
+  width: 100vw;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100vw;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: grid;
+  grid-template-rows: 150px auto 100px;
+  grid-template-columns: minmax(200px, 2fr) 10fr;
+}
+
+.page-nav{
+  grid-column: 1;
+  grid-row: 1/3;
+}
+
+.page-header{
+  grid-column: 2;
+  grid-row: 1;
+
+}
+
+.page-content{
+  grid-column: 2;
+  grid-row: 2;
+
+}
+
+.page-footer{
+  grid-column: 2;
+  grid-row: 3;
+}
+*/
+
+.title-panel{
+  color: #361e16;
+  font-size: 1.25em;
+  font-weight: 300;
+  line-height: 1.25;
+  padding: 0.5em 0.75em;
+}
+
+.purpur-logo{
+  margin-left: auto;
+  margin-right: auto;
+  height:60px;
+}
+
+.breadcrumb:not(:last-child){
+  margin-bottom: 0;
+}
+
+
+.mainnavicon{
+  margin: 20px;
+}
+
+.router-link-exact-active{
+  background-color: #f8f0e5;
+}
+
+.mainnavicon:before{
+  border-radius: 20px;
+  width:40px;
+  height:40px;
+  background-color: #4099FF;
+  margin: 10px;
+}
+
+.navbar{
+
+}
+
+
+
